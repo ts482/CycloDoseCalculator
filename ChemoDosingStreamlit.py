@@ -3,7 +3,7 @@ import streamlit as st
 
 st.write('# Cyclophosphamide for allo prescription')
 
-st.write('## This tool has NOT been validated any conclusions drawn ' + \
+st.write('## This tool has NOT been validated. Any conclusions drawn ' + \
          'are done at the risk of the user')
 
 weight = st.number_input('Enter weight in kg')
