@@ -26,7 +26,7 @@ if button:
 
         if weight/ibw > 1.25:
             cdw = ibw + 0.4*(weight - ibw)
-            st.write('Weight is more than 125% ideal body weight, therefore using adjusted body weight: {round(cdw, 1)}kg')
+            st.write(f'Weight is more than 125% ideal body weight, therefore using adjusted body weight: {round(cdw, 1)}kg')
         else:
             cdw = ibw
             st.write('Weight is less than 125% ideal body weight, therefore using ideal body weight as above')
