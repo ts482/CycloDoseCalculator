@@ -32,6 +32,10 @@ if button:
             cdw = ibw
             st.write('Weight is less than 125% ideal body weight, therefore using ideal body weight as above')
 
-        dose = 50*cdw
-        st.write(f'50mg/kg cyclophosphamide dose should therefore be: {round(dose)}mg')
+        cyclo_dose = 50*cdw
+        mesna_dose = 24*cdw
+        mesna_dose2 = 42*cdw
+        st.write(f'50mg/kg cyclophosphamide dose should therefore be: {round(cyclo_dose)}mg')
+        st.write(f'24mg/kg mesna dose should therefore be: {round(mesna_dose)}mg')
+        st.write(f'42mg/kg mesna dose should therefore be: {round(mesna_dose2)}mg')
         st.write('Note: this does not take dose banding into account')
