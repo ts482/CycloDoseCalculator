@@ -22,17 +22,16 @@ if button:
             ibw = 2.3*(height-152.4)/2.54 + 50
         else:
             ibw = 2.3*(height-152.4)*0.9/2.54 + 45.5
-        st.write(f'ideal body weight is therefore {ibw}')
+        st.write(f'Ideal body weight is {round(ibw,1)}')
 
         if weight/ibw > 1.25:
             cdw = ibw + 0.4*(weight - ibw)
-            st.write('Weight is more than 125%% ideal body weight, therefore using adjusted body weight')
-            st.write(f'This is {cdw}')
+            st.write('Weight is more than 125% ideal body weight, therefore using adjusted body weight')
+            st.write(f'This is {round(cdw, 1)}')
         else:
             cdw = ibw
-            st.write('Weight is less than 125%% ideal body weight, therefore using ideal body weight')
-            st.write(f'This is {cdw}')
+            st.write('Weight is less than 125% ideal body weight, therefore using ideal body weight as above')
 
         dose = 50*cdw
-        st.write(f'50mg/kg cyclophosphamide dose should therefore be: {dose}')
-        st.write('this does not take dose banding into account')
+        st.write(f'50mg/kg cyclophosphamide dose should therefore be: {round(dose)}')
+        st.write('Note: his does not take dose banding into account')
