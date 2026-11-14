@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.write('# Cyclophosphamide for allo prescription')
+st.write('# Cyclophosphamide and mesna for allograft protocol prescription')
 
 st.write('## This tool has NOT been validated. Any conclusions drawn ' + \
          'are done at the risk of the user')
